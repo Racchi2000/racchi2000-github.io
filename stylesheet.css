@@ -1,0 +1,163 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ここからCSSを書いていきましょう */
+.top{
+  background-image:url(https://prog-8.com/images/html/advanced/top.png);
+  background-size:cover;
+  color:rgba(255,255,255,0.7);
+  padding:180px 0 100px 0;
+  text-align:center;
+}
+.top h1{
+  font-size:45px;
+  letter-spacing:5px;
+}
+.button{
+  display:inline-block;
+  border-radius:4px;
+  padding:8px 24px;
+  color:white;
+  opacity:0.8;
+  margin:15px 5px;
+}
+.button:hover{
+  cursor:pointer;
+  opacity:1;
+}
+.button span{
+  padding-right:5px;
+}
+.register{
+  background-color:#239b76;
+}
+.facebook{
+  background-color:#3b5998;
+}
+.twitter{
+  background-color:#55acee;
+}
+
+.header{
+  z-index:10;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(34,49,52,0.9);
+  color:white;
+  height:65px;
+  width:1280px;
+}
+.header img{
+  width:124px;
+  padding:20px 55px;
+}
+.login{
+  background-color:rgba(255,255,255,0.3);
+  padding:0 25px;
+  float:right;
+  margin:0 55px;
+  height:65px;
+  line-height:65px;
+}
+.login:hover{
+  transition:all 0.5s;
+  opacity:0.3;
+}
+.lessons-wrapper{
+  height:580px;
+  background-color:#f7f7f7;
+  text-align:center;
+}
+
+.heading{
+  text-align:center;
+  padding:80px 0 50px 0;
+  color:#5f5d60;
+}
+.heading h2{
+  font-weight:normal;
+}
+.lessons{
+  width:1170px;
+  margin:0 auto;
+}
+.lesson{
+  float:left;
+  width:25%;
+}
+.lesson-icon{
+  position:relative;
+}
+
+.lesson-icon p{
+  color:white;
+  position:absolute;
+  width: 100%;
+  top:90px;
+}
+.lesson-text p{
+  width:80%;
+  color:#b3aeb5;
+  font-size:13px;
+  margin: 15px auto;
+}
+.start{
+  text-align:center;
+}
+.start-heading{
+  color:#5f5d60;
+  text-align:center;
+  padding-top:80px;
+  padding-bottom:50px;
+}
+.start-heading h2{
+  font-weight:normal;
+}
+.start-button{
+  display:inline-block;
+  padding-bottom:80px;
+  background-color:#5dca88;
+  opacity:0.8;
+  box-shadow:0 7px #1a7940;
+  color:white;
+  border-radius:4px;
+  padding:15px 40px;
+  margin-bottom:80px;
+}
+.start-button:hover{
+  opacity:1;
+  cursor:pointer;
+}
+.start-button:active{
+  box-shadow:none;
+  position:relative;
+  top:7px;
+}
+.footer-wrapper{
+  border-top:1px solid #eee;
+  font-size:12px;
+  color:#b3aeb5;
+  padding:30px 40px;
+}
+.footer-logo{
+  width:124px;
+  height:auto;
+}
